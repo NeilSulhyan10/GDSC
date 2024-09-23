@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import GDSC from "./assets/GDSC.mp4";
 import Logo from "./assets/logo.png";
+import Background from "./assets/Background.jpeg";
 import Logo2 from "./assets/logo2.png";
 import One from "./assets/one.png";
 
@@ -27,7 +28,12 @@ function App() {
         alt=""
         className="w-1/2 sm:w-1/3 md:w-1/4 h-auto animate-spin-slow"
       />
-      <div className="bg-white min-h-screen flex flex-col items-center justify-center">
+      <div className="bg-black min-h-screen flex flex-col items-center justify-center">
+      <img
+        src={Background}
+        alt=""
+        className="w-1/2 sm:w-1/3 md:w-1/4 h-auto animate-spin-slow"
+      />
         <section className="w-full h-screen flex flex-col justify-center items-center px-4">
           <h1
             className="font-bold text-5xl sm:text-6xl md:text-8xl text-red-600 mb-4 tracking-wide animate-bounce"
