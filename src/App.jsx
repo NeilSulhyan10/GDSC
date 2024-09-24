@@ -32,8 +32,8 @@ function App() {
         />
       </div>
 
-      <div className="bg-black py-6 text-center space-y-6">
-        <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-12">
+      <div className="bg-black py-6 text-center">
+        <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-8">
           Click Below to RSVP for GIM
         </h3>
         <a
@@ -43,7 +43,7 @@ function App() {
           RSVP Now
         </a>
 
-        <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-12">
+        <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-8 mt-8">
           Click Below to Download APK
         </h3>
         <a
