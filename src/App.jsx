@@ -18,7 +18,7 @@ function App() {
             className="w-full max-w-sm sm:max-w-md md:max-w-4xl rounded-lg shadow-xl border-4 border-yellow-500"
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/9SWGZsVSxKs?autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/9SWGZsVSxKs?autoplay=1&mute=0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
