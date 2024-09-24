@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import GDSC from "./assets/GDSC.mp4";
 import Logo from "./assets/logo.png";
-import Background from "./assets/Background.jpg";
-import Logo2 from "./assets/logo2.png";
+import bg1 from "./assets/2.png";
+import bg2 from "./assets/3.png";
+import Logo2 from "./assets/logo2.jpg";
 import One from "./assets/one.png";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       const videoTop = videoSection.getBoundingClientRect().top;
       if (videoTop < window.innerHeight && videoRef.current) {
         videoRef.current.play();
-      }else{
+      } else {
         videoRef.current.pause();
       }
     };
@@ -26,11 +27,11 @@ function App() {
   return (
     <>
       <div className="bg-black min-h-screen flex flex-col items-center justify-center">
-      <img
-        src={Background}
-        alt=""
-        className="w-full sm:w-full md:w-full h-auto animate-spin-slow"
-      />
+        <img
+          src={bg1}
+          alt=""
+          className="w-full sm:w-full md:w-full h-auto animate-spin-slow"
+        />
         <section className="w-full h-screen flex flex-col justify-center items-center px-4">
           <h1
             className="font-bold text-5xl sm:text-6xl md:text-8xl text-red-600 mb-4 tracking-wide animate-bounce"
@@ -64,12 +65,17 @@ function App() {
           />
         </section>
         <img
+          src={bg2}
+          alt=""
+          className="w-full sm:w-full md:w-full h-auto animate-spin-slow"
+        />
+        <img
           src={One}
           alt=""
           className="w-1/2 sm:w-full md:w-full h-auto animate-spin-slow"
         />
       </div>
-      <div className="footer-container py-3 md:py-12 flex justify-start flex-wrap items-center">
+      <div className="footer-container py-3 md:py-12 flex justify-start flex-wrap items-center bg-black">
         <div className="GDSC-details px-5 flex flex-col space-y-3">
           <a className="GDSC-logo" href="/">
             <img
@@ -84,12 +90,12 @@ function App() {
               style={{ color: "transparent" }}
             />
           </a>
-          <div className="GDSC-Powered-by font-bold text-lg">
+          <div className="GDSC-Powered-by font-bold text-lg text-white">
             GDSC-WCE powered by Google Developer Students club
           </div>
           <a
             target="_blank"
-            className="WCE-address"
+            className="WCE-address text-white"
             href="https://www.google.com/maps/place/Walchand+College+of+Engineering/@16.8457387,74.5992688,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc1237f52c65db5:0xa3535676176ded0a!8m2!3d16.8457387!4d74.6014575"
           >
             <span className="capitalize line-1">
@@ -105,25 +111,25 @@ function App() {
           </a>
           <div className="social-links flex space-x-3">
             <a target="_blank" href="https://www.instagram.com/gdsc_wce/?hl=en">
-              <i className="fab fa-instagram text-gdsc-blue w-6 h-6" />
+              <i className="fab fa-instagram text-white w-6 h-6" />
             </a>
             <a target="_blank" href="/#">
-              <i className="fab fa-twitter text-gdsc-blue w-6 h-6" />
+              <i className="fab fa-twitter text-white w-6 h-6" />
             </a>
             <a
               target="_blank"
               href="https://www.youtube.com/channel/UCrwdrer13mWACqFNR8y6vgA"
             >
-              <i className="fab fa-youtube text-gdsc-blue w-6 h-6" />
+              <i className="fab fa-youtube text-white w-6 h-6" />
             </a>
             <a target="_blank" href="https://github.com/gdscwce">
-              <i className="fab fa-github text-gdsc-blue w-6 h-6" />
+              <i className="fab fa-github text-white w-6 h-6" />
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/company/gdsc-wce/mycompany/"
             >
-              <i className="fab fa-linkedin text-gdsc-blue w-6 h-6" />
+              <i className="fab fa-linkedin text-white w-6 h-6" />
             </a>
           </div>
         </div>
