@@ -1,7 +1,7 @@
 import React from "react";
 import bg1 from "./assets/2.png";
 import bg2 from "./assets/3.png";
-import Logo2 from "./assets/logo2.jpg";
+import Logo2 from "./assets/logo2.png";
 import Background from "./Background.jsx";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             className="w-full max-w-sm sm:max-w-md md:max-w-4xl rounded-lg shadow-xl border-4 border-yellow-500"
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/9SWGZsVSxKs?autoplay=1&mute=0"
+            src="https://www.youtube.com/embed/9SWGZsVSxKs?autoplay=1&mute=1"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
