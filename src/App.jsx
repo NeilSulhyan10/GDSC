@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import GDSC from "./assets/GDSC.mp4";
-import Logo from "./assets/logo.png";
 import bg1 from "./assets/2.png";
 import bg2 from "./assets/3.png";
 import Logo2 from "./assets/logo2.jpg";
-import One from "./assets/one.png";
+import Background from "./Background.jsx"
 
 function App() {
   const videoRef = useRef(null);
@@ -27,31 +26,7 @@ function App() {
   return (
     <>
       <div className="bg-black min-h-screen flex flex-col items-center justify-center">
-        <img
-          src={bg1}
-          alt=""
-          className="w-full sm:w-full md:w-full h-auto animate-spin-slow"
-        />
-        <section className="w-full h-screen flex flex-col justify-center items-center px-4">
-          <h1
-            className="font-bold text-5xl sm:text-6xl md:text-8xl text-red-600 mb-4 tracking-wide animate-bounce"
-            style={{ fontFamily: "'Orbitron', sans-serif" }}
-          >
-            G-Verse
-          </h1>
-          <h2
-            className="font-bold text-5xl sm:text-6xl md:text-8xl text-blue-500 mb-4 tracking-wide animate-pulse"
-            style={{ fontFamily: "'Orbitron', sans-serif" }}
-          >
-            2.0
-          </h2>
-          <p className="text-lg sm:text-xl md:text-4xl text-gray-700 opacity-0 animate-fadeIn delay-2000 text-center">
-            Join us for an exciting tech adventure!
-          </p>
-          <p className="text-base sm:text-lg md:text-2xl text-green-600 mt-10 animate-bounce">
-            Scroll down to watch Teaser
-          </p>
-        </section>
+        <Background />
 
         <section
           id="video"
@@ -68,11 +43,6 @@ function App() {
           src={bg2}
           alt=""
           className="w-full sm:w-full md:w-full h-auto animate-spin-slow"
-        />
-        <img
-          src={One}
-          alt=""
-          className="w-1/2 sm:w-full md:w-full h-auto animate-spin-slow"
         />
       </div>
       <div className="footer-container py-3 md:py-12 flex justify-start flex-wrap items-center bg-black">
