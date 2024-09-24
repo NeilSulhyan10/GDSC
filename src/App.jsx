@@ -31,6 +31,29 @@ function App() {
           className="w-full sm:w-full md:w-full h-auto animate-spin-slow"
         />
       </div>
+
+      <div className="bg-black py-6 text-center space-y-6">
+        <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-12">
+          Click Below to RSVP for GIM
+        </h3>
+        <a
+          href="#"
+          className="px-6 py-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600 transition duration-300 text-lg font-semibold shadow-md"
+        >
+          RSVP Now
+        </a>
+
+        <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-12">
+          Click Below to Download APK
+        </h3>
+        <a
+          href="#"
+          className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 text-lg font-semibold shadow-md"
+        >
+          Download APK
+        </a>
+      </div>
+
       <div className="footer-container py-3 md:py-12 flex justify-start flex-wrap items-center bg-black">
         <div className="GDSC-details px-5 flex flex-col space-y-3">
           <a className="GDSC-logo" href="/">
