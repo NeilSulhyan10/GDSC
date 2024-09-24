@@ -1,28 +1,10 @@
-import React, { useEffect, useRef } from "react";
-import GDSC from "./assets/GDSC.mp4";
+import React from "react";
 import bg1 from "./assets/2.png";
 import bg2 from "./assets/3.png";
 import Logo2 from "./assets/logo2.jpg";
 import Background from "./Background.jsx";
 
 function App() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const videoSection = document.getElementById("video");
-      const videoTop = videoSection.getBoundingClientRect().top;
-      if (videoTop < window.innerHeight && videoRef.current) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
       <div className="bg-black min-h-screen flex flex-col items-center justify-center">
@@ -30,14 +12,18 @@ function App() {
 
         <section
           id="video"
-          className="w-full flex justify-center items-center mb-4 px-4"  // Reduced mb-20 to mb-4
+          className="w-full flex justify-center items-center mb-4 px-4"
         >
-          <video
-            ref={videoRef}
+          <iframe
             className="w-full max-w-sm sm:max-w-md md:max-w-4xl rounded-lg shadow-xl border-4 border-yellow-500"
-            src={GDSC}
-            loop
-          />
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9SWGZsVSxKs?autoplay=1&mute=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </section>
         <img
           src={bg2}
