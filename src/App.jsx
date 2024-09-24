@@ -3,7 +3,7 @@ import GDSC from "./assets/GDSC.mp4";
 import bg1 from "./assets/2.png";
 import bg2 from "./assets/3.png";
 import Logo2 from "./assets/logo2.jpg";
-import Background from "./Background.jsx"
+import Background from "./Background.jsx";
 
 function App() {
   const videoRef = useRef(null);
@@ -30,7 +30,7 @@ function App() {
 
         <section
           id="video"
-          className="w-full flex justify-center items-center mb-20 px-4"
+          className="w-full flex justify-center items-center mb-4 px-4"  // Reduced mb-20 to mb-4
         >
           <video
             ref={videoRef}
