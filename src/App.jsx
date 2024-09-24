@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import GDSC from "./assets/GDSC.mp4";
 import Logo from "./assets/logo.png";
-import Background from "./assets/Background.jpeg";
+import Background from "./assets/Background.jpg";
 import Logo2 from "./assets/logo2.png";
 import One from "./assets/one.png";
 
@@ -14,6 +14,8 @@ function App() {
       const videoTop = videoSection.getBoundingClientRect().top;
       if (videoTop < window.innerHeight && videoRef.current) {
         videoRef.current.play();
+      }else{
+        videoRef.current.pause();
       }
     };
 
@@ -23,16 +25,11 @@ function App() {
 
   return (
     <>
-      <img
-        src={Logo}
-        alt=""
-        className="w-1/2 sm:w-1/3 md:w-1/4 h-auto animate-spin-slow"
-      />
       <div className="bg-black min-h-screen flex flex-col items-center justify-center">
       <img
         src={Background}
         alt=""
-        className="w-1/2 sm:w-1/3 md:w-1/4 h-auto animate-spin-slow"
+        className="w-full sm:w-full md:w-full h-auto animate-spin-slow"
       />
         <section className="w-full h-screen flex flex-col justify-center items-center px-4">
           <h1
@@ -63,7 +60,6 @@ function App() {
             ref={videoRef}
             className="w-full max-w-sm sm:max-w-md md:max-w-4xl rounded-lg shadow-xl border-4 border-yellow-500"
             src={GDSC}
-            muted
             loop
           />
         </section>
