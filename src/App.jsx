@@ -47,12 +47,24 @@ function App() {
           <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl">
             Click Below to Download The GDSC Quiz App
           </h3>
-          <h6 className="text-white mb-6">It is Mandatory.</h6>
+          <h6 className="text-white mb-6 text-sm">(It is Mandatory)</h6>
           <a
-            href="/GDSC/app-release.apk" download 
+            href="/GDSC/G-Verse.apk" download 
             className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 text-lg font-semibold shadow-md"
           >
             Download App
+          </a>
+        </div>
+
+        <div className="mt-8 mb-8">
+          <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-8">
+            Click Below to Join GDSC Community Whatsapp Group
+          </h3>
+          <a
+            href="https://chat.whatsapp.com/JVFMO1MLQnAAJCeSMra4JF"
+            className="px-6 py-3 bg-white text-green-600 rounded-lg hover:bg-white-600 transition duration-300 text-lg font-semibold shadow-md"
+          >
+            Join Group
           </a>
         </div>
       </div>
