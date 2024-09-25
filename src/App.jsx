@@ -37,21 +37,24 @@ function App() {
           Click Below to RSVP for GIM
         </h3>
         <a
-          href="#"
+          href="https://gdg.community.dev/events/details/google-gdg-on-campus-walchand-college-of-engineering-sangli-india-presents-g-verse-20/"
           className="px-6 py-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600 transition duration-300 text-lg font-semibold shadow-md"
         >
           RSVP Now
         </a>
 
-        <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl mb-8 mt-8">
-          Click Below to Download APK
-        </h3>
-        <a
-          href="#"
-          className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 text-lg font-semibold shadow-md"
-        >
-          Download APK
-        </a>
+        <div className="mt-8 mb-8">
+          <h3 className="text-white font-bold text-lg sm:text-xl md:text-2xl">
+            Click Below to Download The GDSC Quiz App
+          </h3>
+          <h6 className="text-white mb-6">It is Mandatory.</h6>
+          <a
+            href="/GDSC/app-release.apk" download 
+            className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 text-lg font-semibold shadow-md"
+          >
+            Download App
+          </a>
+        </div>
       </div>
 
       <div className="footer-container py-3 md:py-12 flex justify-start flex-wrap items-center bg-black">
@@ -89,7 +92,10 @@ function App() {
             <br />
           </a>
           <div className="social-links flex space-x-3">
-            <a target="_blank" href="https://www.instagram.com/gdsc_wce/?hl=en">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/gdsc_wce/?hl=en"
+            >
               <i className="fab fa-instagram text-white w-6 h-6" />
             </a>
             <a target="_blank" href="/#">
