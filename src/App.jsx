@@ -73,7 +73,7 @@ function App() {
             />
           </a>
           <div className="GDSC-Powered-by font-bold text-lg text-white">
-            GDSC-WCE powered by Google Developer Students club
+            GDSC-WCE powered by Google Developer Student Club
           </div>
           <a
             target="_blank"
